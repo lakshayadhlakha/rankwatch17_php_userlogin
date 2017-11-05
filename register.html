@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 mx-auto card">
+            <div class="hero">
+              <h1 class="hero-text">Register</h1>
+            </div>
+            <form action="userlogin.php" id="needs-validation"  method="Post" novalidate>
+              <div class="form-group">
+                <label for="userFullName">Full Name</label>
+                <input type="text" class="form-control" id="userFullName" name="userFullName" placeholder="Full Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid name.
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="userEmail">Email</label>
+                  <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Email" required>
+                  <div class="invalid-feedback">
+                    Please provide a Email.
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="userPassword">Password</label>
+                  <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Password" required>
+                  <div class="invalid-feedback">
+                    Please provide a Password.
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="userNumber">Mobile Number</label>
+                  <input type="text" class="form-control" id="userNumber" name="userNumber" placeholder="Mobile Number" required>
+                  <div class="invalid-feedback">
+                    Please provide a Mobile Number.
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="userAge">Age</label>
+                  <input type="text" class="form-control" id="userAge" name="userAge" placeholder="Age" required>
+                  <div class="invalid-feedback">
+                    Please enter Age.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="userGender">Gender</label>
+                <select id="userGender" name="userGender" class="form-control" required>
+                  <option>Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select Gender.
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="userAddress">Address</label>
+                <textarea class="form-control" id="userAddress" name="userAddress" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                  Please provide a address.
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="userCountry">Country</label>
+                  <select id="userCountry" name="userCountry" class="form-control" required>
+                    <option>Choose...</option>
+                    <option>India</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a Country.
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="userState">State</label>
+                  <select id="userState" name="userState" class="form-control" required>
+                    <option>Choose...</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Pondicherry">Pondicherry</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttaranchal">Uttaranchal</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a State.
+                  </div>
+                </div>
+              </div>
+              <input type="submit" name="submit" class="btn btn-lg btn-primary btn-custom" value="Register">
+            </form>
+          </div>
+          <div class="col-12 card col-lg-8 mx-auto">
+            <p class="lead centered">Already have an account?<a href="login.html"> Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          var form = document.getElementById('needs-validation');
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        }, false);
+      })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

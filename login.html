@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Office Task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="col-12 mx-auto card">
+              <div class="hero">
+                <h1 class="hero-text">Login</h1>
+              </div>
+              <form id="needs-validation" action="profile.php" method="Post" novalidate>
+                <div class="form-row">
+                  <div class="form-group col-12 mx-auto">
+                    <label for="userEmail">Email</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                      Please provide a Email.
+                    </div>
+                  </div>
+                  <div class="form-group col-12 mx-auto">
+                    <label for="userPassword">Password</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Password" required>
+                    <div class="invalid-feedback">
+                      Please provide a Password.
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary btn-custom">Submit</button>
+              </form>
+            </div>
+            <div class="col-12 mx-auto card">
+              <p class="lead">Don't have an account?<a href="register.html"> Register</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          var form = document.getElementById('needs-validation');
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        }, false);
+      })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
